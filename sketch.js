@@ -7,7 +7,7 @@ function setup() {
   createCanvas(400, 400);
   capture = createCapture(VIDEO)  //啟動攝影機
   capture.size(capture_width,capture_height); //設定顯示畫面大小
-  captureGraphics=captureGraphics(capture_width,capture_height)
+  captureGraphics=createCapture(capture_width,capture_height)
   captureGraphics.translate(capture_width,0)
   captureGraphics.scale(-1,1)
   capture.hide()
@@ -30,3 +30,4 @@ function draw() {
   pop()
 
 }
+
