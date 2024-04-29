@@ -4,7 +4,7 @@ var capture_height=480
 var span=10
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   capture = createCapture(VIDEO)  //啟動攝影機
   capture.size(capture_width,capture_height); //設定顯示畫面大小
   captureGraphics=createCapture(capture_width,capture_height)
